@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin:0;
+}body{
+    background-image: url(img/desktop-1920x1080\ \(1\).jpg);
+    background-repeat:no-repeat ;
+    background-size: 100%,100%;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    transform: translate(32rem, 150px);
+    background-color: #00000080;
+    border: 2px solid #80808080;
+    box-shadow: 2px 2px 4px 1px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+.txt input{
+    position:relative;
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    outline: none;
+    max-width:260px;
+    font-size:16pt ;
+}
+.txt{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.txt label{
+    position: absolute;
+    pointer-events: none;
+    margin-top: 13px;
+    left: 20px;
+    text-align: center;
+    transition: all .3s ease-out;
+    font-weight:bolder ;
+}
+.txt input:focus + label,
+.txt input:valid + label{
+    font-size: 10px;
+    margin-top: -7px ;
+    color: white;
+}
+.bnt{ 
+    text-align: center;
+}
+
+button{
+    position: relative;
+    top:30px;
+    background-color: transparent;
+     border: 2px solid #b42929;;
+    margin: 2px;
+    padding: 4px;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+button:hover{
+    background-color: #f30707;
+    color: white;
+}
